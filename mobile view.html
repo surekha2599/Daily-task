@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Background Image */
+        header {
+            background: url('green-tropical-leaves-exquisite-texture-a-captivating-abstract-nature-leaf-background-with-vintage-dark-tones-perfect-as-desktop-wallpaper_9975760.jpg!sw800.jpeg') no-repeat center center/cover;
+            height: 95vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #about {
+            background: #fff;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        #projects {
+            background: #f39c12;
+            color: white;
+        }
+
+        #projects h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            background-color: #fff;
+            color: #333;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            padding: 10px;
+            background-color: #f39c12;
+            color: white;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .project-card p {
+            padding: 15px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        #contact {
+            background: #16a085;
+            color: white;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .btn-contact {
+            background-color: #f39c12;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-contact:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .project-card {
+                width: 80%;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Soujanya S</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer and designer, focused on creating beautiful and functional websites. I love working with modern technologies and always strive to learn new skills.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <img src="Why-is-python-one-of-the-best-programming-languages.jpg.webp" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>This is a brief description of the first project I worked on. It was a full-stack web application built with React and Node.js.</p>
+            </div>
+            <div class="project-card">
+                <img src="selection-064.png" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>This is a brief description of the second project. It is a design-focused project where I created a modern, responsive website.</p>
+            </div>
+            <div class="project-card">
+                <img src="c.png.webp" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>This is a brief description of the third project. I developed a mobile app to help users track their daily activities and tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: ssoujanya20050807@gmail.com</p>
+            <p>Phone: +91 8610531594</p>
+            <a href="mailto:example@example.com" class="btn-contact">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Soujanya. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html> 
